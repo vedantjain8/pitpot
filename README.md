@@ -1,4 +1,5 @@
 # pitpot — Plant Shop (for Coursera certificate)
+website url: https://pitpot.vercel.app/
 
 This is a small project implemented with Vite + React for a Coursera front-end certificate assignment. The app is a minimal e-commerce demo for houseplants with a landing page, product listing, and shopping cart.
 
