@@ -1,0 +1,82 @@
+:root {
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  --color-bg: #f3fbf6;
+  --color-surface: #ffffff;
+  --color-text: #163223;
+  --color-muted: #6b736f;
+  --accent: #2f855a; /* earthy green */
+  --accent-2: #f59e0b; /* warm amber for CTA */
+  --card-bg: #fbfff9;
+  --btn-text: #04251a;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("/assets/bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-bg);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--accent);
+  color: var(--btn-text);
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(47, 133, 90, 0.12);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--color-bg);
+  }
+  a:hover {
+    color: var(--accent);
+  }
+  button {
+    background-color: var(--accent);
+  }
+}
